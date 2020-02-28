@@ -1,0 +1,219 @@
+/* *****************************************************************************/
+	/* Thanh Phong */
+@import url('https://fonts.googleapis.com/css?family=Muli');
+*{margin: 0;padding: 0;font-family: 'Muli', sans-serif;}
+a{text-decoration: none;}
+ul{list-style: none;}
+#wrapper{width: 75%;margin: 0 auto;}
+/* header */
+.head_top{position: relative;}
+.head_top .logo{display: flex;justify-content: space-around;padding-top: 50px;}
+.head_top .head_rigth{position: absolute;top: 10px;right: 10px;}
+.head_top .head_rigth .head_icon{text-align: right;margin-bottom: 10px;}
+.head_top .head_rigth .head_icon .fa{color: #848484;}
+.head_top .head_rigth .login_res a{color: #424242;font-size: 15px}
+
+.head_bottom{background-color: #fff;overflow: hidden;margin-top: 35px;border-bottom: 1px solid #D8D8D8;padding-bottom: 20px;}
+.head_bottom .hamburger{display: none;}
+.head_bottom nav{float: left;}
+.head_bottom nav ul li{display: inline-block;margin-right: 10px;border-bottom: 0 solid #fc6c6b;transition: all ease-in .1s;}
+.head_bottom nav li:hover{border-bottom: 3px solid #fc6c6b;}
+.head_bottom nav li a{color: #424242;}
+.head_bottom .search_cart{float: right;position: relative;}
+.head_bottom .search_cart .search{float: left;border: 1px solid #D8D8D8;padding: 0 5px;border-radius: 3px;}
+.head_bottom .search_cart .search input{border: none;padding: 5px 7px;}
+.head_bottom .search_cart .cart{float: right;margin-left: 10px;}
+.head_bottom .search_cart .cart span{display: inline-block;padding: 4px 15px;background-color: #fc6c6b;border-radius: 3px;color: #fff;font-weight: bold;}
+
+.container_slide{padding: 20px 0;background-color: #fff;overflow: hidden;border-bottom: 1px solid #d8d8d8;}
+
+.container_main{width: 100%;overflow: hidden;padding-top: 20px;}
+.container_main .news{width: 25%;float: left;}
+.container_main .news .sales{border-bottom: 1px dashed #d8d8d8;padding-bottom: 10px;}
+.container_main .news .sales img{width: 100%;}
+.container_main .news .about{padding: 10px 0;border-bottom: 1px dashed #d8d8d8;}
+.container_main .news .about h2{color: #424242;margin-bottom: 10px;}
+.container_main .news .about p{color: #646464;font-size: 14px;}
+.container_main .news .about a{color: #fc6c6b;}
+.container_main .news_item{padding: 10px 0;}
+.container_main .news_item h2{color: #424242;margin-bottom: 10px;}
+.container_main .news_item .item_detail{padding-bottom: 20px;margin-bottom: 20px;;border-bottom: 1px dashed #d8d8d8;}
+.container_main .news_item img{width: 100%;}
+.container_main .news_item p{color: #646464;font-size: 14px;margin-top: 15px;}
+.container_main .news_item .title{color: #646464;text-decoration: underline;}
+.container_main .news_item a:last-child{color: #fc6c6b;}
+
+.container_main .content{width: 75%;float: right;padding-left: 20px;box-sizing: border-box;}
+.container_main .content .product{overflow: hidden;}
+.container_main .content .product .item{float: left;width: 30%;margin-left: 36px;margin-bottom: 20px;}
+.container_main .content .product .item:nth-child(1),
+.container_main .content .product .item:nth-child(4),
+.container_main .content .product .item:nth-child(7){margin-left: 0;}
+.container_main .content .product .item>a{position: relative;min-height: 335px;overflow: hidden;display: block;}
+.container_main .content .product .item img{width: 100%;position: absolute;}
+.container_main .content .product .item>a img:last-child{opacity: 0;transition: all ease-in .2s}
+.container_main .content .product .item>a:hover img:last-child{opacity: 1;}
+.container_main .content .product .item>a:hover ~ .pro_info a{background-color: #fff;color: #fc6c6b}
+.container_main .content .product .item .pro_info{text-align: center;padding: 10px 0;}
+.container_main .content .product .item .pro_info p:nth-child(1){font-size: 10px;text-transform: uppercase;margin-bottom: 15px;}
+.container_main .content .product .item .pro_info a{margin-top: 15px;display: block;text-transform: uppercase;padding: 7px;background-color: #fc6c6b;color: #fff;border-radius: 3px;border: 1px solid #fc6c6b;box-sizing: border-box;transition: all ease-in .2s;}
+.container_main .content .product .item .pro_info a:hover{background-color: #fff;color: #fc6c6b}
+
+/* Thanh Phong */
+footer{clear: both;margin-top: 25px;padding: 25px 0;border-top: 1px solid #d8d8d8;}
+.top{text-align: center;margin-bottom: 20px;}
+.top ul li{display: inline-block}
+.top li a{color: #424242;}
+.top li a:hover{text-decoration: underline;}
+.middel{overflow: hidden;margin-bottom: 20px;}
+.middel .form{float: left;width: 50%;}
+.middel .form p{margin-bottom: 10px;}
+.middel .form input[type="text"]{float: left;padding: 5px 7px;border: 1px solid #d8d8d8;border-radius: 3px;width: 200px;}
+.middel .form input[type="submit"]{float: left;margin-left: 15px;display: block;padding: 6px 12px;background-color: #fc6c6b;border-radius: 3px;border: none;color: #fff;}
+.middel .icon{float: right;}
+.middel .icon p{margin-bottom: 10px;text-align: right;}
+.middel .icon .fa{color: #424242;}
+.bottom{padding: 50px 0 20px;}
+.bottom p{text-align: center;}
+
+/* ******************************************************************************************** */
+/* Thanh Tâm */
+/* product.php */
+.tit{padding: 7px 0;}
+.tit span{font-size: 13px;}
+.products{padding: 20px 0;display: flex;justify-content: space-between;flex-wrap: wrap;}
+.products .item{margin-bottom: 20px;width: 30%;}
+.products .item>a{position: relative;min-height: 460px;overflow: hidden;display: block;}
+.products .item img{width: 100%;position: absolute;}
+.products .item>a img:last-child{opacity: 0;transition: all ease-in .2s}
+.products .item>a:hover img:last-child{opacity: 1;}
+.products .item>a:hover ~ .pro_info a{background-color: #fff;color: #fc6c6b}
+.products .item .pro_info{text-align: center;padding: 10px 0;}
+.products .item .pro_info p:nth-child(1){text-transform: uppercase;font-size: 13px;margin-bottom: 15px;}
+.products .item .pro_info a{margin-top: 15px;display: block;text-transform: uppercase;padding: 7px;background-color: #fc6c6b;color: #fff;border-radius: 3px;border: 1px solid #fc6c6b;box-sizing: border-box;transition: all ease-in .2s;}
+.products .item .pro_info a:hover{background-color: #fff;color: #fc6c6b}
+
+.product_next{padding: 20px 0;display: flex;justify-content: space-between;flex-wrap: wrap;}
+.product_next .item{margin-bottom: 20px;width: 22%;}
+.product_next .item>a{position: relative;min-height: 340px;overflow: hidden;display: block;}
+.product_next .item img{width: 100%;position: absolute;}
+.product_next .item>a img:last-child{opacity: 0;transition: all ease-in .2s}
+.product_next .item>a:hover img:last-child{opacity: 1;}
+.product_next .item>a:hover ~ .pro_info a{background-color: #fff;color: #fc6c6b}
+.product_next .item .pro_info{text-align: center;padding: 10px 0;}
+.product_next .item .pro_info p:nth-child(1){text-transform: uppercase;font-size: 9px;margin-bottom: 15px;}
+.product_next .item .pro_info a{margin-top: 15px;display: block;text-transform: uppercase;padding: 7px;background-color: #fc6c6b;color: #fff;border-radius: 3px;border: 1px solid #fc6c6b;box-sizing: border-box;transition: all ease-in .2s;}
+.product_next .item .pro_info a:hover{background-color: #fff;color: #fc6c6b}
+h2.product{color: #424242;margin-top: 20px;}
+.page{display: inline-block;padding: 5px 10px;background-color: #424242;border-radius: 3px;margin-right: 10px;}
+.page a{color: #fff;font-weight: bold;}
+
+/* *************************************************************************** */
+/* Tiến Đạt */
+/* product_detail.php */
+.product_detail{border-bottom: 1px dotted #d8d8d8;padding: 20px 0;display: flex;justify-content: space-around;flex-wrap: wrap;}
+.product_detail .img{width: 40%;position: relative;min-height: 470px;overflow: hidden;}
+.product_detail .img img{width: 100%;height: 100%;position: absolute;}
+.product_detail .img img:last-child{opacity: 0;transition:  all ease-in .2s;}
+.product_detail .img:hover img:last-child{opacity: 1;}
+.product_detail .info h2:first-child{text-transform: uppercase;letter-spacing: .1em;margin-bottom: 10px;font-size: 15px;}
+.product_detail .info p{color: #848484;margin-bottom: 10px;}
+.product_detail .info a{display: block;width: 150px;padding: 5px 0;border: 1px solid #fc6c6b;border-radius: 3px;text-align: center;background-color: #fc6c6b;font-weight: bold;color: #fff;margin-top: 20px;}
+
+.container_main .content .follow{margin-top: 20px;padding-top: 10px;border-top: 1px solid #d8d8d8;}
+.container_main .content .follow h2{color: #424242;margin-bottom: 10px;}
+.container_main .content .follow .follow_img{display: flex;justify-content: space-between;}
+.container_main .content .follow .follow_img img{width: 24%;}
+.container_main .content .follow img:hover {opacity: .6;transition: all ease-in .2s;}
+
+/* cart.php */
+.show_cart{padding: 20px 0;}
+.show_cart table{width: 100%;text-align: center;font-weight: bold;color: #424242;}
+.show_cart tr:first-child th,
+.show_cart tr td{padding: 10px 0;border-bottom: 1px solid #d8d8d8;}
+.show_cart td:first-child{text-align: left;}
+.show_cart td:last-child,
+.show_cart th:last-child{text-align: right;}
+.show_cart img{width: 150px;}
+.show_cart td:nth-child(2){text-transform: uppercase;font-size: 13px;}
+.show_cart td:nth-child(4) span{display: inline-block;padding: 5px 10px;font-size: 21px;}
+.show_cart td:nth-child(4) a{color: #424242;}
+.show_cart tr:last-child a{display: inline-block;padding: 10px 20px;font-weight: bold;transition: all ease-in .2s;cursor: pointer;}
+.show_cart tr:last-child a:first-child{background-color: #424242;border: 1px solid #424242;color: #fff;}
+.show_cart tr:last-child a:last-child{background-color: #fc6c6b;border: 1px solid #fc6c6b;color: #fff;}
+.show_cart tr:last-child a:first-child:hover{background-color: #fff;color: #424242}
+.show_cart tr:last-child a:last-child:hover{background-color: #fff;color: #fc6c6b;}
+.alert{position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);text-align: center;background-color: #fff;box-shadow: 0px 0px 10px 0px #848484;padding: 25px 20px;display: none;}
+.alert a{cursor: pointer;display: inline-block;padding: 7px 15px;color: #fff;border-radius: 3px;margin-top: 10px;font-weight: bold;}
+.alert a:nth-child(2){background-color: #424242;}
+.alert a:nth-child(3){background-color: #fc6c6b;}
+
+/* ************************************************************************************ */
+/* Quốc Khánh */
+/* payment.php */
+.customer{padding: 20px 0;}
+.customer form{width: 50%;margin-top: 20px;}
+.customer .pay{border: 1px solid #d8d8d8;border-radius: 5px;padding: 5px 10px;box-sizing: border-box;}
+.customer .pay input[type="text"]{border: none;width: 100%;}
+.customer .pay label{color: #424242;}
+.customer input[type="submit"]{border: none;width: 100%;padding: 10px;border-radius: 5px;background-color: #0000FF;color: #fff;cursor: pointer;margin-top: 10px;font-weight: bold;}
+.customer .pay select{padding: 5px 20px 0 0;border: none;}
+.customer .miss{font-size: 13px;color: #FF0000;margin: 7px 0;}
+.cartEr{color: #FF0000;margin: 15px 0;text-align: left;}
+
+/* login.php */
+.login{padding: 20px 0;}
+.login h2{color: #424242;}
+.login form{width: 50%;margin-top: 20px;}
+.login .login_field{margin-bottom: 10px;}
+.login input{width: 70%;border: none;border-bottom: 1px solid #848484;padding: 5px 7px;box-sizing: border-box;}
+.login input[type="submit"]{margin-bottom: 10px;cursor: pointer;padding: 10px;border: none;font-weight: bold;background-color: #fc6c6b;color: #fff;}
+.login a{font-size: 13px;color: #424242;}
+.login .message{color: #FF0000;}
+.login .miss{font-size: 13px;color: #FF0000;margin: 7px 0;}
+
+/* *********************************************************************************************** */
+/* Thanh Tâm */
+/* about.php */
+.about{padding: 20px 0;line-height: 1.7em;}
+.about h2{text-align: center;color: #424242;margin: 15px 0;}
+.about img{width: 100%;}
+.about p:nth-child(4){font-size: 15px;color: #848484;text-align: center;font-style: italic}
+.about p:nth-child(5){text-align: center;margin-top: 10px;color: #424242;}
+.about .about_box{display: flex;justify-content: space-between;margin-top: 15px;}
+.about .about_box .img, .about .about_box .txt{width: 50%;}
+.about .about_box .txt{padding-left: 70px;box-sizing: border-box;}
+.about .txt p:nth-child(2){font-size: 15px; color: #848484;margin-bottom: 20px;}
+.about .about_box .sec{padding-left: 0;padding-right: 70px;}
+.about .about_box .sec p:nth-child(2){padding-left: 20px;}
+
+/* ************************************************************************************************************************* */
+/* Mạnh Dũng */
+/* contact.php */
+.contact{padding: 20px 0;}
+.contact h2{color: #424242;margin-bottom: 20px;}
+.contact form{width: 50%;}
+.contact form p{color: #424242;}
+.contact input[type="text"]{width: 70%;border: none;border-bottom: 1px solid #848484;padding: 5px 7px;box-sizing: border-box;margin-bottom: 10px;}
+.contact textarea{width: 70%;margin-top: 10px;}
+.contact input[type="submit"]{margin-bottom: 10px;cursor: pointer;padding: 10px;border: none;font-weight: bold;background-color: #fc6c6b;color: #fff;width: 70%;margin-top: 10px;}
+.contact .info{margin-bottom: 10px;line-height: 1.5em;border-bottom: 1px dotted #d8d8d8;padding-bottom: 15px;}
+.contact .info p{font-style: italic;color: #424242;font-size: 13px;}
+.contact .info span{font-weight: bold;}
+.contact .miss{font-size: 13px;color: #FF0000;margin: 7px 0;}
+
+/* news.php */
+.news_fa{padding: 20px 0}
+.news_fa .news_item{width: 70%;border-bottom: 1px dashed #d8d8d8;padding-bottom: 15px;margin-bottom: 15px;}
+.news_fa .news_item .img{width: 70%;margin: 10px auto;height: 300px;overflow: hidden;}
+.news_fa .news_item .img img{width: 100%;}
+.news_fa a{color: #424242;}
+.news_fa a:nth-child(4){display: block;padding: 7px 10px;background-color: #fc6c6b;color: #fff;width: 80px;text-align: center;border-radius: 3px;}
+.news_fa p{font-weight: bold;color: #646464;}
+
+/* news_detail.php */
+.news_detail{padding: 20px 0;}
+.news_detail h2{color: #424242;}
+.news_detail p:nth-child(2){font-weight: bold;color: #646464;margin: 15px 0;}
+.news_detail a{display: block;text-align: center;}
+.news_detail a img{width: 70%;margin: 10px auto;}
